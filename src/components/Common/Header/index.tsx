@@ -8,6 +8,14 @@ import darklogo from "../../../../public/icons/Elaf-logo.png";
 import { HiBars3, HiOutlineMagnifyingGlass } from "react-icons/hi2";
 import BasketCart from "@/components/Ecommerce/BasketCart/BasketCart";
 import Wishlist from "@/components/Ecommerce/Wishlist/Wishlist";
+import { CiLogin } from "react-icons/ci";
+import { CiUser } from "react-icons/ci";
+import { FaRegUser } from "react-icons/fa6";
+import { FiUser } from "react-icons/fi";
+
+
+
+
 
 const { cart_badge, wishlist_badge } = style;
 
@@ -107,13 +115,18 @@ const Header = () => {
             </div>
 
             <div className="flex items-center gap-3">
+              
               <span className="text-[32px] cursor-pointer hover:text-primary">
                 <BasketCart cart_badge={cart_badge} />
               </span>
+              <Link href={"/"} className="hidden lg:block bg-white rounded-full p-1.5 hover:bg-slate-200 shadow-sm">
+                <CiUser className="text-[25px]" />
+              </Link>
               <HiBars3
                 onClick={navbarToggleHandler}
                 className="text-[33px] cursor-pointer lg:hidden"
               />
+              
               {/* <span className="hidden lg:block text-[28px] cursor-pointer hover:text-red-600">
                 <Wishlist cart_badge={wishlist_badge} />
               </span> */}

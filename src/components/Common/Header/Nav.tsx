@@ -6,6 +6,7 @@ import { usePathname } from "next/navigation";
 import { Link } from "@/navigation";
 import ThemeToggler from "./ThemeToggler";
 import LocaleSwitcher from "@/components/LocalSwitcher/local-switcher";
+import { FaWhatsapp } from "react-icons/fa";
 
 interface MenuItem {
   title: string;
@@ -70,8 +71,8 @@ const Nav: React.FC<NavProps> = ({ navbarOpen, navbarToggleHandler }) => {
             {menuItem.path ? (
               <Link
                 href={menuItem.path}
-                className={`flex py-2 text-base lg:text-[16.5px] lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 ${
-                  locale === "ar" ? "__rtl_lang font-[500]" : "font-berfume tracking-widest"
+                className={`flex py-2 text-base lg:text-[14.5px] lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 ${
+                  locale === "ar" ? "__rtl_lang font-[500]" : "font-berfume tracking-widest lg:text-[16.5px]"
                 } ${
                   pathname === menuItem.path
                     ? "text-primary dark:text-white"
@@ -110,6 +111,10 @@ const Nav: React.FC<NavProps> = ({ navbarOpen, navbarToggleHandler }) => {
         
         <LocaleSwitcher />
         <ThemeToggler />
+
+        <Link href={"https://wa.me/+201015882008"}  target="_blank" className="">
+          <FaWhatsapp  className="text-[32px] text-green-500 bg-white rounded-full p-[0.20rem] shadow-md hover:bg-slate-700 transition duration-300 ease-in-out "/>
+        </Link>
 
         </div>
         

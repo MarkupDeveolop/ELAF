@@ -11,7 +11,7 @@ const ThemeToggler = () => {
     >
       <svg
         viewBox="0 0 23 23"
-        className="w-4 h-4 stroke-current dark:hidden md:h-5 md:w-5 text-blue-900"
+        className="w-4 h-4 stroke-current dark:hidden md:h-5 md:w-5 text-blue-900 hover:text-gray-400"
         fill="none"
       >
         <path
