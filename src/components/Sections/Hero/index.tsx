@@ -82,7 +82,7 @@ const Hero = () => {
                 </div>
 
                 {/* Swiper Slider for Deal Images */}
-                <div className="text-white mb-16  order-1 lg:order-2">
+                <div className="text-white bg-white rounded-full p-1 shadow-lg shadow-gray-200 mb-16  order-1 lg:order-2">
                 <Image
                 src={ElafLogo}
                 alt="logo"
