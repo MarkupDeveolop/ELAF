@@ -120,7 +120,7 @@ const Header = () => {
                 <BasketCart cart_badge={cart_badge} />
               </span>
               <Link href={"/"} className="hidden lg:block bg-white rounded-full p-1.5 hover:bg-slate-200 shadow-sm">
-                <CiUser className="text-[25px]" />
+                <CiUser className="text-[25px] dark:text-black" />
               </Link>
               <HiBars3
                 onClick={navbarToggleHandler}
