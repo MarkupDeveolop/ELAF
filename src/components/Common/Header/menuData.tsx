@@ -17,7 +17,6 @@ const menuData = (t: (key: string) => string): Menu[] => [
   },
 
 
-
   {
     id: 3,
     title: t("products"),
@@ -33,9 +32,6 @@ const menuData = (t: (key: string) => string): Menu[] => [
     newTab: false,
   },
 
-  
-
-  
 
   {
     id: 5,

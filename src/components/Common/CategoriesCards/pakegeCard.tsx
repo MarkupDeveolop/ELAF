@@ -36,7 +36,7 @@ const PakegeCard: React.FC<IPakegeCardProps> = ({ id, imgSrc, title, price }) =>
       <DialogPopUp isOpen={isOpen} onClose={() => setIsOpen(false)} data={selectedData} />
 
       <div className={`flex justify-center mx-8 sm:mx-2 lg:mx-5 ${locale === "ar" ? ".__rtl_lang" : ""}`}>
-        <div className="relative w-[280px] h-[320px] sm:w-[175px] sm:h-[230px] md:w-[200px] lg:w-[280px] lg:h-[330px] mx-auto my-8 hover:grayscale-0 shadow-md rounded-3xl cursor-pointer bg-white hover:bg-white dark:hover:bg-white text-black duration-300 hover:shadow-one dark:shadow-3xl dark:hover:shadow-green-500">
+        <div className="relative w-[280px] h-[320px] sm:w-[175px] sm:h-[230px] md:w-[200px] lg:w-[280px] lg:h-[330px] mx-auto my-8 hover:grayscale-0 shadow-md rounded-3xl cursor-pointer bg-white hover:bg-white dark:hover:bg-white text-black duration-300 hover:shadow-one dark:shadow-md dark:shadow-gray-500">
           <Link href={`/product/${id}`}>
             <div className="w-full">
               <Image

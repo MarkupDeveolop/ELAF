@@ -11,7 +11,7 @@ import BannerHeader from "../Banner/BannerHeader";
 import HeroCardRender from "./Hero-Card/HeroCardRender";
 import { useTheme } from "next-themes";
 import Image from "next/image";
-import ElafLogo from "../../../../public/icons/Elaf-logo.png";
+import ElafLogo from "../../../../public/icons/Elaf-logo.svg";
 
 
 const Hero = () => {
@@ -31,7 +31,7 @@ const Hero = () => {
     <>
       <section
         id="home"
-        className={`relative z-10 overflow-hidden pb-16 pt-[110px] dark:bg-gray-dark md:pb-[20px] md:pt-[50px] xl:pb-[60px] xl:pt-[80px] 2xl:pb-[100px] 2xl:pt-[110px]`}
+        className={`relative z-10 overflow-hidden pb-16 pt-[110px] dark:bg-gray-dark md:pb-[20px] md:pt-[50px] xl:pb-[60px] xl:pt-[80px] 2xl:pb-[10px] 2xl:pt-[110px]`}
       >
 
         <div className="container">
@@ -51,13 +51,13 @@ const Hero = () => {
                                 : "text-[1.4rem] md:text-[1.6rem] lg:text-[1.9rem]"
                             }`}
                           >
-                            {item.title}{" "}
+                            {item.title}{" , "}
                             <span className={theme === "dark" ? "text-[#FFD500]" : "text-[#FFD500]"}>
                               <Typewriter
                                 words={
                                   local === "ar"
-                                    ? ["سهله", "ذكيه", "امنه"]
-                                    : ["Easy", "Smart", "Safe"]
+                                    ? ["الجوهر", "الفخامه", "الاناقه"]
+                                    : ["Essence", "Luxury", "Sophistication"]
                                 }
                                 loop={true}
                                 cursor
@@ -88,7 +88,7 @@ const Hero = () => {
                 alt="logo"
                 width={0}
                 height={0}
-                className="w-full "
+                className="w-full text-white"
               />
                 </div>
               </div>

@@ -56,14 +56,14 @@ const Header = () => {
       dir="ltr"
       className={`header left-0 top-0 z-40 flex w-full items-center  ${
         sticky
-          ? "dark:bg-gray-dark dark:shadow-sticky-dark fixed z-[9999] py-3 lg:py-0 bg-white !bg-opacity-80 shadow-sticky backdrop-blur-sm transition"
+          ? "dark:bg-gray-dark dark:shadow-sticky-dark fixed z-[9999] py-3 lg:py-1 bg-white !bg-opacity-80 shadow-sticky backdrop-blur-sm transition"
           : "absolute bg-transparent shadow-sm dark:shadow-md py-2"
       }`}
     >
       <div className="container">
         <div className="relative -mx-2 flex items-center justify-between gap-2 ">
           {/* Logo */}
-          <div className="w-[50px] md:w-[60px] lg:w-[70px] ">
+          <div className="w-[50px] md:w-[60px] lg:w-[75px] p-1 bg-white rounded-full flex items-center justify-center shadow-md dark:shadow-lg dark:shadow-gray-500 ">
             <Link href="/">
               <Image
                 src={darklogo}
