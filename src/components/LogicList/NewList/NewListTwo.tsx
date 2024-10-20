@@ -110,7 +110,7 @@ const NewListTwo = <T extends HasId>({
         <div
           ref={prevRef}
           className={`p-2  lg:p-3 rounded-full  ${
-            isAtBeginning ? "bg-black/70 text-white" : "bg-primary text-white"
+            isAtBeginning ? "bg-black/70 text-white" : "bg-[#F4D03F] text-black"
           } cursor-pointer shadow-sm absolute -left-1 lg:-left-4`}
         >
           <HiChevronLeft />
@@ -118,7 +118,7 @@ const NewListTwo = <T extends HasId>({
         <div
           ref={nextRef}
           className={`p-2 lg:p-3 rounded-full ${
-            isAtEnd ? "bg-black/70 text-white" : "bg-primary text-white"
+            isAtEnd ? "bg-black/70 text-white" : "bg-[#F4D03F] text-black"
           } cursor-pointer shadow-sm absolute -right-2 lg:-right-4`}
         >
           <HiChevronRight />
