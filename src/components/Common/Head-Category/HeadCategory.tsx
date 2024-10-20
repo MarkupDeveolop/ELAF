@@ -2,6 +2,11 @@ import { Link } from "@/navigation";
 import { HiChevronRight } from "react-icons/hi2";
 import { useLocale } from "next-intl";
 import { memo } from "react";
+import Image from "next/image";
+
+import Elaf_icon_white from "../../../../public/icons/icon-white.png"
+import Elaf_icon_black from "../../../../public/icons/Elaf-black.png"
+import { useTheme } from "next-themes";
 
 interface SubTitlesProps {
   title_en: string;
@@ -25,10 +30,20 @@ const HeadCategory: React.FC<SubTitlesProps> = memo(({
   const title = locale === "ar" ? title_ar : title_en;
   const btnTitle = locale === "ar" ? btnTitle_ar : btnTitle_en;
 
+  const {theme} = useTheme()
+
   return (
     <div className="flex items-center justify-between pt-4">
       <div className="flex items-center gap-2">
-        <span className="border-2 h-7 border-[#FFD500] dark:shadow-2xl dark:border-primary rounded-lg"></span>
+      <Image
+              src={theme === "dark"  ? Elaf_icon_white : Elaf_icon_black}
+              alt="user-image"
+              width={0}
+              height={0}
+              className="m-auto inline-block w-[25px] "
+            />
+
+
         <h2 className="text-blue-950 dark:text-[#FFD500] text-[16px] font-semibold">
           {title} {/* Dynamic title based on locale */}
         </h2>
